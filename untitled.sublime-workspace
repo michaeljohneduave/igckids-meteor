@@ -1,0 +1,1106 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"t",
+				"text-decoration"
+			],
+			[
+				"so",
+				"secondTile	(?)"
+			],
+			[
+				"pro",
+				"props	React: this.props."
+			],
+			[
+				"time",
+				"time-grunt"
+			],
+			[
+				"cityM",
+				"Citymunicipality"
+			],
+			[
+				"bower",
+				"bower_components"
+			],
+			[
+				"baran",
+				"barangay"
+			],
+			[
+				"pt",
+				"PropTypes"
+			],
+			[
+				"city",
+				"cityMunicipality"
+			],
+			[
+				"col-md",
+				"col-md-12"
+			],
+			[
+				"starm",
+				"_handleStartMonth"
+			],
+			[
+				"_handebara",
+				"_handleBarangay2"
+			],
+			[
+				"_handlec",
+				"_handleHealthCenter"
+			],
+			[
+				"bara",
+				"barangay	[]"
+			],
+			[
+				"_handleBar",
+				"_handleBarangay"
+			],
+			[
+				"cit",
+				"cityMunicipalities	[]"
+			],
+			[
+				"rend",
+				"renderOptions"
+			],
+			[
+				"prot",
+				"propTypes	{}"
+			],
+			[
+				"Ba",
+				"BatongBackal"
+			],
+			[
+				"dis",
+				"disableform4"
+			],
+			[
+				"disab",
+				"disableform2"
+			],
+			[
+				"form",
+				"form-control"
+			],
+			[
+				"on",
+				"_onChange"
+			],
+			[
+				"_",
+				"_onChange"
+			],
+			[
+				"cwu",
+				"cwun	React: componentWillUnmount: fn() { ... }"
+			],
+			[
+				"mai",
+				"mainpageStores"
+			],
+			[
+				"Ma",
+				"MainpageConstants	(?)"
+			],
+			[
+				"Mainpage",
+				"MainpageConstants	(?)"
+			],
+			[
+				"_handle",
+				"_handleCity"
+			],
+			[
+				"date",
+				"dateGenerated"
+			],
+			[
+				"n",
+				"numOfMonths"
+			],
+			[
+				"grade",
+				"currentGradeLevel"
+			],
+			[
+				"repor",
+				"reportingPeriodEnd"
+			],
+			[
+				"rp",
+				"reportingPeriodEnd	(?)"
+			],
+			[
+				"rep",
+				"reportingPeriodStart"
+			],
+			[
+				"per",
+				"personCurrentGradeLevel"
+			],
+			[
+				"gsp",
+				"gspotTable"
+			],
+			[
+				"ad",
+				"addNewRecCb"
+			],
+			[
+				"btn",
+				"btn-default"
+			],
+			[
+				"sele",
+				"selectedIcon	(?)"
+			],
+			[
+				"py",
+				"pymtExpiredTimeout	(?)"
+			],
+			[
+				"deleted",
+				"deletedBy"
+			],
+			[
+				"licen",
+				"driverLicenseNum"
+			],
+			[
+				"pasc",
+				"passengerActivationCode"
+			],
+			[
+				"IN",
+				"INSERT"
+			],
+			[
+				"get",
+				"getToken()"
+			],
+			[
+				"App",
+				"AppActions	(?)"
+			],
+			[
+				"fil",
+				"fileUrls"
+			],
+			[
+				"notif",
+				"notifications"
+			],
+			[
+				"cw",
+				"cwun	React: componentWillUnmount: fn() { ... }"
+			],
+			[
+				"comp",
+				"componentWillMount"
+			],
+			[
+				"em",
+				"_emitChange"
+			],
+			[
+				"mari",
+				"margin-bottom"
+			],
+			[
+				"e",
+				"encodeURI(uri)"
+			],
+			[
+				"Bw",
+				"BrowseActions	(?)"
+			],
+			[
+				"is",
+				"isSubscribed"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"_hand",
+				"_handleFbShare"
+			],
+			[
+				"bro",
+				"BrowseStore"
+			],
+			[
+				"B",
+				"BROWSE_CHANGE_EVENT"
+			],
+			[
+				"to",
+				"todaySelected"
+			],
+			[
+				"todayre",
+				"todayreports"
+			],
+			[
+				"bor",
+				"border-bottom"
+			],
+			[
+				"Td",
+				"TodayReports	(?)"
+			],
+			[
+				"del",
+				"deleteDate"
+			],
+			[
+				"payem",
+				"payments	(num)"
+			],
+			[
+				"driverLas",
+				"driverLastName"
+			],
+			[
+				"g",
+				"glyphicon-search"
+			],
+			[
+				"driverLice",
+				"driverLicenseNum"
+			],
+			[
+				"user",
+				"userColor	(?)"
+			],
+			[
+				"seld",
+				"selectedLicenseNum	(?)"
+			],
+			[
+				"driver",
+				"driverLastCheckout"
+			],
+			[
+				"YY",
+				"YYYY-MM-DD"
+			],
+			[
+				"val",
+				"value"
+			],
+			[
+				"ret",
+				"retVal	[]"
+			],
+			[
+				"expire",
+				"EXPIREDTIMEOUT"
+			],
+			[
+				"wa",
+				"WARNINGTIMOUT"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"col",
+				"col-xs-offset-1"
+			],
+			[
+				"cl",
+				"col-xs-8"
+			],
+			[
+				"driverIsA",
+				"driverIsAdmin"
+			],
+			[
+				"seel",
+				"selectpicker"
+			],
+			[
+				"lice",
+				"licenseNum"
+			],
+			[
+				"pa",
+				"paymentDiff	(num)"
+			],
+			[
+				"exa",
+				"expiryAllowance"
+			],
+			[
+				"set",
+				"settled"
+			],
+			[
+				"setl",
+				"settlementDate"
+			],
+			[
+				"Trigge",
+				"TRIGGER"
+			],
+			[
+				"crea",
+				"CREATE"
+			],
+			[
+				"dir",
+				"driverLicenseNum"
+			],
+			[
+				"len",
+				"len_i"
+			],
+			[
+				"di",
+				"driversTable-isAdmin"
+			],
+			[
+				"driverl",
+				"driverLandlindNum"
+			],
+			[
+				"MMM",
+				"MMM-DD-YYYY"
+			],
+			[
+				"selec",
+				"selectedLicenseNum	(?)"
+			],
+			[
+				"sett",
+				"settlementDate"
+			],
+			[
+				"col-xs",
+				"col-xs-offset-3"
+			],
+			[
+				"las",
+				"LastTerminalEntry"
+			],
+			[
+				"tem",
+				"terminalid	(?)"
+			],
+			[
+				"Actor",
+				"ActorType"
+			],
+			[
+				"top",
+				"topPosition	(?)"
+			],
+			[
+				"r",
+				"rumbled	[]"
+			],
+			[
+				"find",
+				"findOne"
+			],
+			[
+				"isnta",
+				"instead"
+			],
+			[
+				"Ter",
+				"TerminalSummaries"
+			],
+			[
+				"D",
+				"DailyorPerDraw	(?)"
+			],
+			[
+				"genera",
+				"Generating"
+			],
+			[
+				"dail",
+				"DailyorPerDraw"
+			],
+			[
+				"CreateCsv",
+				"CreateCsv4(res, res, terms})"
+			],
+			[
+				"Create",
+				"CreateCsv4(res, res, terms})"
+			],
+			[
+				"wi",
+				"winningnum	(?)"
+			],
+			[
+				"res",
+				"result	(?)"
+			],
+			[
+				"terb",
+				"TerminalBetsCsv"
+			],
+			[
+				"cs",
+				"csvStr	(str)"
+			],
+			[
+				"term",
+				"termCount	(?)"
+			],
+			[
+				"count",
+				"termCount"
+			],
+			[
+				"Total",
+				"TotalAmount"
+			],
+			[
+				"Betc",
+				"BetCount"
+			],
+			[
+				"Curen",
+				"CurrentTotal"
+			],
+			[
+				"numb",
+				"numbertokens	{}"
+			],
+			[
+				"Test",
+				"TestComponentResults"
+			],
+			[
+				"tes",
+				"testrescompCB(err, res)"
+			],
+			[
+				"tesresc",
+				"testcompresCB"
+			],
+			[
+				"cr",
+				"CurrentTest"
+			],
+			[
+				"Tem",
+				"Template"
+			],
+			[
+				"packlis",
+				"packagelist"
+			],
+			[
+				"Tras",
+				"Transactions"
+			],
+			[
+				"isconv",
+				"isconv	(?)"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"build_system_choices":
+	[
+	],
+	"build_varint": "",
+	"command_palette":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"rei",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"rie",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"Edit",
+				"Set Syntax: EditorConfig"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"add pac",
+				"Package Control: Advanced Install Package"
+			],
+			[
+				"REI",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"re",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"eri",
+				"Indentation: Reindent Lines"
+			],
+			[
+				"ti",
+				"View: Toggle Open Files in Side Bar"
+			],
+			[
+				"rtei",
+				"Set Syntax: Java Properties"
+			],
+			[
+				"ter",
+				"TernJS: Reload"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"tern",
+				"TernJS: Reload"
+			],
+			[
+				"Ter",
+				"TernJS: Reload"
+			],
+			[
+				"install pa",
+				"Package Control: Install Package"
+			],
+			[
+				"rrei",
+				"Set Syntax: Regular Expression"
+			],
+			[
+				"in",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"ind",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"In",
+				"Indentation: Convert to Tabs"
+			],
+			[
+				"IN",
+				"Indentation: Convert to Tabs"
+			]
+		],
+		"width": 449.0
+	},
+	"console":
+	{
+		"height": 139.0,
+		"history":
+		[
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/home/michael/work/meteor/igckids"
+	],
+	"file_history":
+	[
+		"/home/michael/.config/sublime-text-3/Packages/User/igckids.sublime-project",
+		"/home/michael/.config/sublime-text-3/Packages/User/Default (Linux).sublime-keymap",
+		"/home/michael/.config/sublime-text-3/Packages/Default/Default (Linux).sublime-keymap",
+		"/home/michael/work/micab-gateway/public/javascripts/useractions.js",
+		"/home/michael/work/micab-gateway/public/javascripts/simpletable.js",
+		"/home/michael/work/micab-gateway/public/javascripts/requests.js",
+		"/home/michael/work/micab-gateway/public/javascripts/gspot.js",
+		"/home/michael/work/micab-gateway/public/javascripts/requestprofile.js",
+		"/home/michael/work/micab-gateway/views/requestprofile.jade",
+		"/home/michael/work/micab-gateway/public/lib/bootstrap-datepicker/bootstrap-datepicker3.min.css",
+		"/home/michael/work/micab-gateway/public/lib/bootstrap-datepicker/bootstrap-datepicker.min.js",
+		"/home/michael/work/micab-gateway/routes/index.js",
+		"/home/michael/work/meteor/igckids/.editorconfig",
+		"/home/michael/work/meteor/igckids/client/controller.js",
+		"/home/michael/work/meteor/igckids/client/views",
+		"/home/michael/work/meteor/igckids/server/models.js",
+		"/home/michael/work/micab-gateway/public/javascripts/drivers.js",
+		"/home/michael/work/micab-gateway/routes/passengers.js",
+		"/home/michael/work/micab-gateway/routes/drivers.js",
+		"/home/michael/work/micab-gateway/routes/driverpage.js",
+		"/home/michael/work/micab-gateway/public/javascripts/driverpage.js",
+		"/home/michael/work/2048/nodemon.json",
+		"/home/michael/work/2048/tasks/config/browserify.js",
+		"/home/michael/work/2048/assets/styles/importer.less",
+		"/home/michael/work/2048/node_modules/sails/bin/sails-lift.js",
+		"/home/michael/work/2048/assets/js/main.js",
+		"/home/michael/work/2048/tasks/pipeline.js",
+		"/home/michael/work/2048/.bowerrc",
+		"/home/michael/work/2048/tasks/register/default.js",
+		"/home/michael/work/2048/tasks/config/watch.js",
+		"/home/michael/work/2048/www/index.html",
+		"/home/michael/work/2048/Gruntfile.js",
+		"/home/michael/work/2048/package.json",
+		"/home/michael/work/2048/tasks/config/nodemon.js",
+		"/home/michael/work/2048/.gitignore",
+		"/home/michael/work/2048/config/sockets.js",
+		"/home/michael/work/2048/tasks/config/uglify.js",
+		"/home/michael/work/2048/bower.json",
+		"/home/michael/work/2048/tasks/register/compileAssets.js",
+		"/home/michael/work/2048/.tmp/public/js/app.js",
+		"/home/michael/work/2048/.tmp/public/index.html",
+		"/home/michael/work/2048/assets/js/views/gameboard.jsx",
+		"/home/michael/work/2048/tasks/register/syncAssets.js",
+		"/home/michael/work/2048/assets/index.html",
+		"/home/michael/work/2048/README.md",
+		"/home/michael/work/2048/tasks/register/linkAssetsBuild.js",
+		"/home/michael/work/2048/tasks/register/linkAssets.js",
+		"/home/michael/work/2048/tasks/config/sails-linker.js",
+		"/home/michael/work/2048/tasks/register/linkAssetsBuildProd.js",
+		"/home/michael/work/2048/assets/js/views/app.jsx",
+		"/home/michael/work/2048/tasks/config/timegrunt.js",
+		"/home/michael/work/2048/assets/js/stores/appStores.js",
+		"/home/michael/work/2048/assets/js/actions/appActions.js",
+		"/home/michael/work/2048/assets/js/constants/appConstants.js",
+		"/home/michael/work/2048/assets/jsx/app.jsx",
+		"/home/michael/work/2048/assets/linker/bower_components/jquery/bower.json",
+		"/home/michael/work/2048/tasks/config/wiredep.js",
+		"/home/michael/work/2048/.tmp/public/linker/bower_components/jquery/dist/jquery.min.js",
+		"/home/michael/work/2048/tasks/config/clean.js",
+		"/home/michael/work/2048/.tmp/public/robots.txt",
+		"/home/michael/work/2048/tasks/config/copy.js",
+		"/home/michael/work/2048/config/routes.js",
+		"/home/michael/work/2048/.sailsrc",
+		"/home/michael/work/dswd-api/config/bootstrap.js",
+		"/home/michael/work/dswd-api/protected/provinces.json",
+		"/home/michael/work/dswd-api/api/models/School.js",
+		"/home/michael/work/dswd-api/api/models/Healthcenter.js",
+		"/home/michael/work/dswd-api/api/models/Citymunicipality.js",
+		"/home/michael/work/dswd-api/api/models/Barangay.js",
+		"/home/michael/work/dswd-api/api/models/Province.js",
+		"/home/michael/work/dswd-api/api/models/Stations.js",
+		"/home/michael/work/dswd-api/config/dswd.json.postman_collection",
+		"/home/michael/work/dswd-web/app/less/default.less",
+		"/home/michael/work/dswd-web/app/scripts/app/views/default.css",
+		"/home/michael/work/dswd-web/bower.json",
+		"/home/michael/work/dswd-web/package.json",
+		"/home/michael/work/dswd-web/app/libs/react-select/asd",
+		"/home/michael/work/dswd-web/app/index.html",
+		"/home/michael/work/dswd-web/node_modules/react-select/src/Select.js",
+		"/home/michael/work/dswd-web/node_modules/react-select/dist/react-select.js",
+		"/home/michael/work/dswd-web/app/scripts/main.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/views/select.jsx",
+		"/home/michael/work/dswd-web/Gruntfile.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/views/mainpage.jsx",
+		"/home/michael/work/dswd-web/node_modules/react-select/examples/src/app.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/views/adduserfields.jsx",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/stores/mainpageStores.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/actions/mainpageActions.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/login/views/login.jsx",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/constants/mainpageConstants.js",
+		"/home/michael/work/dswd-web/app/scripts/app/views/app.jsx",
+		"/home/michael/work/dswd-web/app/scripts/modules/mainpage/views/adduser.jsx",
+		"/home/michael/work/dswd-web/.gitignore",
+		"/home/michael/work/dswd-web/app/scripts/config.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/login/stores/loginStores.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/login/constants/loginConstants.js",
+		"/home/michael/work/dswd-web/app/scripts/modules/login/actions/loginActions.js",
+		"/home/michael/work/dswd-api/assets/js/views/main.jsx",
+		"/home/michael/work/dswd-api/.tmp/public/index.html",
+		"/home/michael/work/dswd-api/assets/js/main.js",
+		"/home/michael/work/dswd-api/.tmp/public/js/dependencies/sails.io.js",
+		"/home/michael/work/dswd-api/tasks/config/copy.js",
+		"/home/michael/work/dswd-api/tasks/config/browserify.js",
+		"/home/michael/work/dswd-api/package.json",
+		"/home/michael/work/dswd-api/assets/index.html",
+		"/home/michael/work/dswd-api/assets/js/views/app.jsx",
+		"/home/michael/.config/sublime-text-3/Packages/WakaTime/WakaTime.sublime-settings",
+		"/home/michael/work/dswd-api/tasks/register/syncAssets.js",
+		"/home/michael/work/dswd-api/tasks/config/watch.js",
+		"/home/michael/work/dswd-api/nodemon.json",
+		"/home/michael/work/dswd-api/assets/js/routes.js",
+		"/home/michael/work/dswd-api/tasks/README.md",
+		"/home/michael/work/dswd-api/assets/js/app.jsx",
+		"/home/michael/work/dswd-api/assets/scripts/routes.js",
+		"/home/michael/work/dswd-api/assets/scripts/main.js",
+		"/home/michael/work/dswd-api/assets/scripts/app.jsx",
+		"/home/michael/work/dswd-api/config/routes.js",
+		"/home/michael/work/dswd-api/assets/.gitkeep",
+		"/home/michael/work/dswd-api/api/models/Formf4.js",
+		"/home/michael/work/dswd-api/api/models/Formf2.js",
+		"/home/michael/work/dswd-api/api/models/Formf3.js",
+		"/home/michael/work/dswd-api/api/models/F2data.js",
+		"/home/michael/work/dswd-api/config/policies.js",
+		"/home/michael/work/dswd-api/config/config.js",
+		"/home/michael/work/micab-gateway/views/gspot.jade",
+		"/home/michael/work/micab-gateway/public/stylesheets/gspot.css",
+		"/home/michael/work/micab-gateway/public/stylesheets/gspot.less",
+		"/home/michael/work/micab-gateway/views/checkout.jade"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 93.0,
+		"where_history":
+		[
+			"",
+			"/home/michael/work/miimove-web/app/scripts",
+			"/home/michael/work/miimove-web/app/less",
+			"",
+			"800px",
+			"",
+			"view-models",
+			"client",
+			"",
+			"client",
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"f5",
+			"side",
+			"F5",
+			"alt+`",
+			"ctrl+k",
+			"side",
+			"initConfig",
+			"console.log(\"asd\");",
+			"wiredep",
+			"Select-place",
+			"react-select",
+			"wiredep",
+			"render",
+			"wiredep",
+			"build",
+			"main",
+			"wiredep",
+			"main",
+			"_handleAddAccess",
+			"Center",
+			"_handleFormDisable",
+			"wiredep",
+			"_handleFormDisable",
+			"rev",
+			"cssmin",
+			"_handleBarangay",
+			"rowspan",
+			"colspan",
+			"class",
+			"bower",
+			"numOfMonths",
+			"pymtExpiredTimeout",
+			"pymtWarningTimeout",
+			"warning",
+			"Refres",
+			"fnReloadAjax",
+			"__initTable",
+			"http",
+			"https",
+			"sort",
+			"aasort",
+			"aaort",
+			"useractions",
+			"userac",
+			"`userac",
+			"`useractions",
+			"role",
+			"'(`id`) ENGINE=InnoDB  DEFAULT CHARSET=latin1",
+			"'(`id`)) ENGINE=InnoDB  DEFAULT CHARSET=latin1",
+			"'(`id`)\n) ENGINE=InnoDB  DEFAULT CHARSET=latin1",
+			"`request`",
+			"after_update_req",
+			"after_update_res",
+			"`driver`",
+			"driverLastName",
+			"checkout",
+			"function",
+			"Request.setToken",
+			"setRefreshToken",
+			"getRefreshToken",
+			"logout",
+			"_onUpload",
+			"submit",
+			"form",
+			"user-avatar",
+			"img",
+			"playlist",
+			"\\",
+			"playlist",
+			"playlist\\",
+			"playlist",
+			"468.5px",
+			"sidebar",
+			"slimScrollDiv",
+			".playlist",
+			"form",
+			"comment-send",
+			"commentsend",
+			"img-preview",
+			"upload-cover-picture",
+			"checkbox",
+			"img-preview",
+			"imagePreview",
+			"imageUpload",
+			"img",
+			"notifDiv",
+			"notifierChannel",
+			"ChannelList",
+			"loadmore",
+			"onChange",
+			"onchange",
+			"_handleLoadMore",
+			"_handleChannelTab",
+			"_handleNotifTab",
+			"img-circle",
+			"nailthumb-image",
+			"video-link",
+			"data-id",
+			"video-link",
+			"video-img",
+			"media-object",
+			"normal_3.png",
+			"editchan",
+			"hide",
+			"channel-img",
+			".img-responsive",
+			"img-responsive",
+			"channel-name-text",
+			"category-icon",
+			"sn-share-img",
+			"clamp",
+			"channel",
+			"display",
+			"-webkit-box",
+			"-webkit-line-clamp",
+			"channel-name-text",
+			"impt-info",
+			"channel-name",
+			"channel-name-text",
+			"btn-md",
+			"subscribe-btn",
+			"async",
+			"share-image",
+			"img-responsive",
+			"viewcount",
+			"brand-primary",
+			"props",
+			"channel-cover"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"rowSpan",
+			"colSpan",
+			"className",
+			"deviceIsActivated",
+			"800",
+			"785px",
+			"800px",
+			"tmpl",
+			"evt",
+			"CurrentTestResult.",
+			"cObj",
+			"tmpl",
+			"evt",
+			"SelectedTest",
+			"'",
+			"tmpl",
+			"evt",
+			"'",
+			""
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 23.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.unsaved_changes":
+	{
+		"height": 100.0
+	},
+	"pinned_build_system": "",
+	"project": "untitled.sublime-project",
+	"replace":
+	{
+		"height": 42.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+			[
+				"user",
+				"views/useractions.jade"
+			],
+			[
+				"userac",
+				"public/javascripts/useractions.js"
+			],
+			[
+				"simp",
+				"public/javascripts/simpletable.js"
+			],
+			[
+				"gspo",
+				"public/javascripts/gspot.js"
+			],
+			[
+				"requests",
+				"public/stylesheets/requests.less"
+			],
+			[
+				"request",
+				"public/javascripts/requestprofile.js"
+			],
+			[
+				"reques",
+				"views/requestprofile.jade"
+			],
+			[
+				"inde",
+				"routes/index.js"
+			],
+			[
+				"passenger",
+				"routes/passengers.js"
+			],
+			[
+				"driverpage",
+				"routes/driverpage.js"
+			],
+			[
+				"driver",
+				"routes/drivers.js"
+			],
+			[
+				"mainpasgore",
+				"app/scripts/modules/mainpage/stores/mainpageStores.js"
+			],
+			[
+				"manage",
+				"app/scripts/modules/mainpage/views/manageaccesslevels.jsx"
+			],
+			[
+				"",
+				"client/js/navbar.js"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 392.0,
+		"last_filter": "",
+		"selected_items":
+		[
+		],
+		"width": 701.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
