@@ -1,0 +1,48 @@
+<template name="addchild">
+  <div class="col-lg-10 col-lg-offset-1">
+    <ul class="nav nav-tabs" role="tablist">
+      <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Basic Info</a></li>
+      <li role="presentation"><a href="#family" aria-controls="family" role="tab" data-toggle="tab">Family</a></li>
+      <li role="presentation"><a href="#health" aria-controls="health" role="tab" data-toggle="tab">Health</a></li>
+      <li role="presentation"><a href="#sponsorship" aria-controls="sponsorship" role="tab" data-toggle="tab">Sponsorship</a></li>
+    </ul>
+    <div class="tab-content">
+      <div role="tabpanel" class="tab-pane fade in active" id="basic">
+        <form class="form-horizontal">
+          <div class="col-sm-4 basic-info-container">
+            {{> basicInfo}}
+          </div>
+          <div class="col-sm-4 basic-info-container">
+            {{> academicInfo}}
+          </div>
+          <div class="col-sm-4 basic-info-container">
+            {{> livingCondition}}
+          </div>
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="family">
+        <form class="form-horizontal">
+          <div class="col-sm-5 basic-info-container">
+            {{> familyInfo}}
+          </div>
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="health">
+        <form class="form-horizontal">
+          <div class="col-sm-4 basic-info-container">
+            {{> healthStatus}}
+          </div>
+          <div class="col-sm-4 basic-info-container">
+            {{> healthCondition}}
+          </div>
+          <div class="col-sm-4 basic-info-container">
+            {{> famHealthCondition}}
+          </div>
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="sponsorship">
+        sponsorship
+      </div>
+    </div>
+  </div>
+</template>

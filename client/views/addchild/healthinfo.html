@@ -1,0 +1,156 @@
+<template name="healthStatus">
+  <legend class="text-center">
+    Health Status
+  </legend>
+  <div class="form-group">
+    <label for="immunized" class="col-md-4 control-label">Immunized:</label>
+    <input type="checkbox" class="health-cb" id="immunized" />
+  </div>
+  <div class="form-group">
+    <label for="immunization" class="col-md-4 control-label">Immunization:</label>
+    <div class="input-group col-md-8">
+      <select id="immunization" style="width: 100%;">
+        <option></option>
+        <option>111111111111111</option>
+        <option>222222222222222</option>
+        <option>333333333333333</option>
+        <option>444444444444444</option>
+      </select>
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="healthStatus" class="col-md-4 control-label">Health Status:</label>
+    <div class="input-group col-md-8">
+      <select id="healthStatus" style="width: 100%;">
+        <option></option>
+        <option>Good</option>
+        <option>Not Good</option>
+      </select>
+    </div>
+  </div>
+</template>
+
+<template name="healthCondition">
+  <legend class="text-center">
+    Health Conditions
+  </legend>
+  <div class="form-group">
+    <div class="row">
+      <label for="skinConditionSelf" class="col-md-5 control-label">Skin Condition:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="skinConditionSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="asthmaSelf" class="col-md-5 control-label">Asthma:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="asthmaSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="boilsSelf" class="col-md-5 control-label">Boils:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="boilsSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="malnutritionSelf" class="col-md-5 control-label">Malnutrition:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="malnutritionSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="eyeProblemsSelf" class="col-md-5 control-label">Eye Problems:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="eyeProblemsSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="goiterSelf" class="col-md-5 control-label">Goiter:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="goiterSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="tbSelf" class="col-md-5 control-label">TB:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="tbSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="dentalProblemsSelf" class="col-md-5 control-label">Dental Problems:</label>
+      <div class="input-group col-md-3">
+        <input type="checkbox" class="health-cb" id="dentalProblemsSelf" />
+      </div>
+    </div>
+    <div class="row">
+      <label for="others" class="col-md-5 control-label">Others:</label>
+      <div class="input-group col-md-6">
+        <input type="text" class="health-cb" id="others" style="width: 100%;" />
+      </div>
+    </div>
+  </div>
+</template>
+
+<template name="famHealthCondition">
+  <legend class="text-center">
+    Family Health Conditions
+  </legend>
+  <div class="form-group">
+    <label for="skinConditionFamily" class="col-md-5 control-label">Skin Conditions:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="skinConditionFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="asthmaFamily" class="col-md-5 control-label">Asthma:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="asthmaFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="boilsFamily" class="col-md-5 control-label">Boils:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="boilsFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="malnutritionFamily" class="col-md-5 control-label">Malnutrition:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="malnutritionFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="eyeProblemsFamily" class="col-md-5 control-label">Eye Problems:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="eyeProblemsFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="goiterFamily" class="col-md-5 control-label">Goiter:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="goiterFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="tbFamily" class="col-md-5 control-label">TB:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="tbFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="tbOneFamily" class="col-md-5 control-label">TB1:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="tbOneFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="form-group">
+    <label for="dentalProblemsFamily" class="col-md-5 control-label">Dental Problems:</label>
+    <div class="input-group col-md-6">
+      <input type="text" class="health-cb" id="dentalProblemsFamily" style="width: 100%;" />
+    </div>
+  </div>
+  <div class="row pull-right">
+    <button type="button" class="btn btn-primary" id="nextSponsorShip">Next</button>
+  </div>
+</template>
