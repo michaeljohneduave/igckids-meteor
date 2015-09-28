@@ -5,31 +5,38 @@
   <div class="form-group">
     <label for="firstName" class="col-md-4 control-label">Father's Name:</label>
     <div class="input-group col-md-8">
-      <input class="form-control" id="firstName" />
+      <input class="form-control" id="firstName" required/>
     </div>
   </div>
   <div class="form-group">
     <label for="firstName" class="col-md-4 control-label">Mother's Name:</label>
     <div class="input-group col-md-8">
-      <input class="form-control" id="middleName" />
+      <input class="form-control" id="middleName" required/>
     </div>
   </div>
   <legend class="text-center">
    Siblings
   </legend>
-  <div class="form-group">
-    <label for="firstName" class="col-md-4 control-label">Brother: </label>
-    <div class="input-group col-md-8">
-      <input class="form-control" id="middleName" />
+  <div class="row">
+    <div class="col-md-4">
+      <button type="button" class="btn btn-default dropdown-toggle pull-right" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        Add Sibling <span class="caret"></span>
+      </button>
+      <ul class="dropdown-menu">
+        <li><a href="#" class="sibling-type-brother">Brother</a></li>
+        <li><a href="#" class="sibling-type-sister">Sister</a></li>
+      </ul>
     </div>
   </div>
+  {{#each ListSiblings}}
+    <div class="form-group">
+      <label for="firstName" class="col-md-4 control-label">{{this}}: </label>
+      <div class="input-group col-md-8">
+        <input class="form-control sibling-input" required/>
+      </div>
+    </div>
+  {{/each}}
   <div class="row pull-right">
-    <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-      Add Sibling <span class="caret"></span>
-    </button>
-    <ul class="dropdown-menu">
-      <li><a href="#">Brother</a></li>
-      <li><a href="#">Sister</a></li>
-    </ul>
+    <button type="button" class="btn btn-primary" id="familyInfoNextBtn">Next</button>
   </div>
 </template>

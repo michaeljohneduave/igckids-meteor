@@ -63,9 +63,4 @@ Template.addchild.events({
   "click #healthNextBtn" : function (evt, tmpl) {
     $('.nav-tabs a[href="#family"]').tab('show');
   }
-
 });
-
-Template.addchild.helpers({
-
-})

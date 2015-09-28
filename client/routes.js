@@ -7,7 +7,12 @@ Router.map(function () {
 
 	this.route("home", {
 		path : "/",
-		template : "home"
+		template : "home",
+    waitOn: function () {
+      return [
+        Meteor.subscribe("images_pub", {})
+      ]
+    }
 	});
 
 	this.route("addchild", {

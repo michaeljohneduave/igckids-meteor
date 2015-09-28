@@ -5,6 +5,7 @@
       <li role="presentation"><a href="#family" aria-controls="family" role="tab" data-toggle="tab">Family</a></li>
       <li role="presentation"><a href="#health" aria-controls="health" role="tab" data-toggle="tab">Health</a></li>
       <li role="presentation"><a href="#sponsorship" aria-controls="sponsorship" role="tab" data-toggle="tab">Sponsorship</a></li>
+      <li role="presentation"><a href="#upload" aria-controls="upload" role="tab" data-toggle="tab">Upload Pictures</a></li>
     </ul>
     <div class="tab-content">
       <div role="tabpanel" class="tab-pane fade in active" id="basic">
@@ -41,7 +42,18 @@
         </form>
       </div>
       <div role="tabpanel" class="tab-pane fade" id="sponsorship">
-        sponsorship
+        <form class="form-horizontal">
+          <div class="col-sm-5 basic-info-container">
+            Sponsorship
+          </div>
+        </form>
+      </div>
+      <div role="tabpanel" class="tab-pane fade" id="upload">
+        <form class="form-horizontal">
+          <div class="col-sm-6 basic-info-container">
+            {{> uploadImages multiple=true}}
+          </div>
+        </form>
       </div>
     </div>
   </div>

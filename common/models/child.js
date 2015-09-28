@@ -1,35 +1,20 @@
-children = new Mongo.Collection("Children");
+Children = new Mongo.Collection("Children");
 
 var child = new SimpleSchema({
-
-  childCode : {
-    type : String,
-    label : "Child code"
-  },
-
-  childNum : {
-    type : Number,
-    label : "Child number"
-  },
-
   firstName : {
     type : String,
-    label : "First name"
   },
 
   middleName : {
     type : String,
-    label : "Middle name"
   },
 
   lastName : {
     type : String,
-    label : "Last name"
   },
 
   birthday : {
     type : Date,
-    label : "Birthday"
   },
 
   gender : {
@@ -40,26 +25,7 @@ var child = new SimpleSchema({
 
   area : {
     type : String,
-    label : "Area"
-  },
-
-  photos : {
-    type : [Object],
-    optional : true
-  },
-
-  "photos.$.url" : {
-    type : String,
-    optional : true
-  },
-
-  "photos.$.createdAt" : {
-    type : Date,
-    optional : true
-  },
-
-  "photos.$.deletedAt" : {
-    type : Date,
+    label : "Area",
     optional : true
   },
 
@@ -74,7 +40,7 @@ var child = new SimpleSchema({
   },
 
   academicAbility : {
-    type : String,
+    type : [String],
     optional : true
   },
 
@@ -93,9 +59,18 @@ var child = new SimpleSchema({
     optional : true
   },
 
+  livingWith : {
+    type : [String],
+    optional : true
+  },
+
+  livingCondition : {
+    type : [String],
+    optional : true
+  },
+
   createdAt : {
     type : Date,
-    denyUpdate : true,
     autoValue : function () {
       if (this.isInsert) {
         return new Date();
@@ -105,7 +80,8 @@ var child = new SimpleSchema({
         }
       }
       this.unset();
-    }
+    },
+    denyUpdate : true,
   },
 
   updatedAt : {
@@ -114,9 +90,10 @@ var child = new SimpleSchema({
       if (this.isUpdate) {
         return new Date();
       }
-    }
+    },
+    denyInsert : true,
+    optional : true
   }
-
 });
 
-children.attachSchema(child);
+Children.attachSchema(child);

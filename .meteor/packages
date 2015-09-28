@@ -27,3 +27,11 @@ random
 ejson
 spacebars
 check
+reactive-var
+raix:handlebar-helpers
+cfs:standard-packages
+tomi:upload-jquery
+tomi:upload-server
+gliese:masonry-desandro
+luisalmeida:unveil
+iamkevingreen:imagesloaded
