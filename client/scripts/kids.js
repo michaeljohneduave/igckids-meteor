@@ -1,8 +1,8 @@
-Template.home.created = function () {
+Template.kids.created = function () {
 
 }
 
-Template.home.rendered = function () {
+Template.kids.rendered = function () {
   $('.grid').masonry({
     itemSelector: '.grid-item',
     columnWidth: 20,
@@ -15,15 +15,15 @@ Template.home.rendered = function () {
   });
 }
 
-Template.home.destroyed = function () {
+Template.kids.destroyed = function () {
 
 }
 
-Template.home.events({
+Template.kids.events({
 
 });
 
-Template.home.helpers({
+Template.kids.helpers({
   ListImages: function () {
     return Images.find();
   }

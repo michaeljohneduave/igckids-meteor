@@ -1,4 +1,9 @@
 Router.configure({
+  layoutTemplate : "appLayout",
+  yieldTemplates : {
+    "header" : {to : "header"},
+    "footer" : {to : "footer"}
+  },
 	notFoundTemplate : "notfound",
 	loadingTemplate : "loading"
 });
