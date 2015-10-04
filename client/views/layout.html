@@ -1,11 +1,11 @@
 <template name="appLayout">
   <div>
-    {{> yield region="header"}}
+    {{> yield "header"}}
   </div>
   <div>
     {{> yield}}
   </div>
-  <div>
-    {{> yield region="footer"}}
-  </div>
+  <footer>
+    <!-- {{> yield "footer"}} -->
+  </footer>
 </template>

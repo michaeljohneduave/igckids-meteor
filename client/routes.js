@@ -9,7 +9,6 @@ Router.configure({
 });
 
 Router.map(function () {
-
 	this.route("home", {
 		path : "/",
 		template : "home",
@@ -25,4 +24,16 @@ Router.map(function () {
 		template : "addchild"
 	});
 
+  this.route("dashboard", {
+    path : "dashboard",
+    template : "dashboard"
+  });
 });
+
+// Router.onBeforeAction(function () {
+//   if (!Meteor.userId()) {
+//     this.render("home");
+//   } else {
+//     this.next();
+//   }
+// });

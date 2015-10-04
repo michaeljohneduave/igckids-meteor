@@ -7,5 +7,5 @@ Meteor.startup(function () {
     getFileName: function (fileInfo, formData) {
       return Random.id(_.random(40,70)) + "." + fileInfo.type.split("/")[1];
     }
-  })
+  });
 });
