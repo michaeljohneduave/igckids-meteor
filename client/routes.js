@@ -28,6 +28,11 @@ Router.map(function () {
     path : "dashboard",
     template : "dashboard"
   });
+
+  this.route("sample", {
+    path : "sample",
+    template : "sample"
+  });
 });
 
 // Router.onBeforeAction(function () {
