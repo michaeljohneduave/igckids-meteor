@@ -1,4 +1,5 @@
 Template.addchild.created = function () {
+  this.currentPage = new ReactiveVar(0);
 };
 
 Template.addchild.rendered = function () {
@@ -74,10 +75,16 @@ Template.addchild.destroyed = function () {
 
 Template.addchild.events({
   "click #basicInfoNextBtn" : function (evt, tmpl) {
-    $('.nav-tabs a[href="#family"]').tab('show');
+
   },
 
   "click #healthNextBtn" : function (evt, tmpl) {
     $('.nav-tabs a[href="#family"]').tab('show');
   }
 });
+
+Template.addchild.helpers({
+  currentPage : function () {
+    return Template.instance().currentPage.get();
+  }
+})
