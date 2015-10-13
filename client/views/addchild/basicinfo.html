@@ -1,3 +1,19 @@
+<template name="basic">
+  <div class="stepOne">
+    <form class="form-horizontal">
+      <div class="col-sm-4 basic-info-container">
+        {{> basicInfo}}
+      </div>
+      <div class="col-sm-4 basic-info-container">
+        {{> academicInfo}}
+      </div>
+      <div class="col-sm-4 basic-info-container">
+        {{> livingCondition}}
+      </div>
+    </form>
+  </div>
+</template>
+
 <template name="basicInfo">
   <legend class="text-center">
    Basic Information
@@ -101,8 +117,5 @@
     <div class="input-group col-md-8">
       <input type="text" id="livingConditions" style="width:100%;" />
     </div>
-  </div>
-  <div class="row pull-right">
-    <button type="button" class="btn btn-primary" id="basicInfoNextBtn">Next</button>
   </div>
 </template>

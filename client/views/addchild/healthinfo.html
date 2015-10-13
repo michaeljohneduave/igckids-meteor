@@ -1,3 +1,18 @@
+<template name="health">
+  <form class="form-horizontal">
+    <div class="col-sm-4 basic-info-container">
+      {{> healthStatus}}
+    </div>
+    <div class="col-sm-4 basic-info-container">
+      {{> healthCondition}}
+    </div>
+    <div class="col-sm-4 basic-info-container">
+      {{> famHealthCondition}}
+    </div>
+  </form>
+</template>
+
+
 <template name="healthStatus">
   <legend class="text-center">
     Health Status
@@ -149,8 +164,5 @@
     <div class="input-group col-md-6">
       <input type="text" class="health-cb" id="dentalProblemsFamily" style="width: 100%;" />
     </div>
-  </div>
-  <div class="row pull-right">
-    <button type="button" class="btn btn-primary" id="nextSponsorShip">Next</button>
   </div>
 </template>

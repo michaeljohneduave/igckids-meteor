@@ -1,3 +1,11 @@
+<template name="family">
+  <form class="form-horizontal">
+    <div class="col-sm-5 basic-info-container">
+      {{> familyInfo}}
+    </div>
+  </form>
+</template>
+
 <template name="familyInfo">
   <legend class="text-center">
    Parents
@@ -36,7 +44,4 @@
       </div>
     </div>
   {{/each}}
-  <div class="row pull-right">
-    <button type="button" class="btn btn-primary" id="familyInfoNextBtn">Next</button>
-  </div>
 </template>

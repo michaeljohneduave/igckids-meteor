@@ -1,68 +1,22 @@
 <template name="addchild">
-
   <div class="col-lg-10 col-lg-offset-1 form-container">
     <div class="step" data-step="0">
-      <p for="step-1"></p>
-      <p for="step-2"></p>
-      <p for="step-3"></p>
-      <p for="step-4"></p>
-      <p for="step-5"></p>
+      <p class="wiz-point" for="step-1"></p>
+      <p class="wiz-point" for="step-2"></p>
+      <p class="wiz-point" for="step-3"></p>
+      <p class="wiz-point" for="step-4"></p>
+      <p class="wiz-point" for="step-5"></p>
     </div>
-<!--     <ul class="nav nav-tabs" role="tablist">
-      <li role="presentation" class="active"><a href="#basic" aria-controls="basic" role="tab" data-toggle="tab">Basic Info</a></li>
-      <li role="presentation"><a href="#family" aria-controls="family" role="tab" data-toggle="tab">Family</a></li>
-      <li role="presentation"><a href="#health" aria-controls="health" role="tab" data-toggle="tab">Health</a></li>
-      <li role="presentation"><a href="#sponsorship" aria-controls="sponsorship" role="tab" data-toggle="tab">Sponsorship</a></li>
-      <li role="presentation"><a href="#upload" aria-controls="upload" role="tab" data-toggle="tab">Upload Pictures</a></li>
-    </ul> -->
-    <div class="tab-content">
-      <div role="tabpanel" class="tab-pane fade in active" id="basic">
-        <form class="form-horizontal">
-          <div class="col-sm-4 basic-info-container">
-            {{> basicInfo}}
-          </div>
-          <div class="col-sm-4 basic-info-container">
-            {{> academicInfo}}
-          </div>
-          <div class="col-sm-4 basic-info-container">
-            {{> livingCondition}}
-          </div>
-        </form>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="family">
-        <form class="form-horizontal">
-          <div class="col-sm-5 basic-info-container">
-            {{> familyInfo}}
-          </div>
-        </form>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="health">
-        <form class="form-horizontal">
-          <div class="col-sm-4 basic-info-container">
-            {{> healthStatus}}
-          </div>
-          <div class="col-sm-4 basic-info-container">
-            {{> healthCondition}}
-          </div>
-          <div class="col-sm-4 basic-info-container">
-            {{> famHealthCondition}}
-          </div>
-        </form>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="sponsorship">
-        <form class="form-horizontal">
-          <div class="col-sm-5 basic-info-container">
-            Sponsorship
-          </div>
-        </form>
-      </div>
-      <div role="tabpanel" class="tab-pane fade" id="upload">
-        <form class="form-horizontal">
-          <div class="col-sm-6 basic-info-container">
-            {{> uploadImages multiple=true}}
-          </div>
-        </form>
-      </div>
+    <div class="page-container">
+    {{> Template.dynamic template=currentPage}}
+    </div>
+    <div class="row page-footer">
+      <button class="btn btn-primary pull-right" id="nextpage">
+        {{nextBtnVal}}
+      </button>
+      <button class="btn btn-primary pull-right {{showPrevBtn}}" id="prevpage">
+        Previous
+      </button>
     </div>
   </div>
 </template>
