@@ -1,22 +1,28 @@
 <template name="addchild">
-  <div class="col-lg-10 col-lg-offset-1 form-container">
-    <div class="step" data-step="0">
-      <p class="wiz-point" for="step-1"></p>
-      <p class="wiz-point" for="step-2"></p>
-      <p class="wiz-point" for="step-3"></p>
-      <p class="wiz-point" for="step-4"></p>
-      <p class="wiz-point" for="step-5"></p>
+  <section id="addchild">
+    <div class="container">  
+      <div class="row">
+        <div class="col-lg-12">
+          <div class="step" data-step="0">
+            <p class="wiz-point" for="step-1"></p>
+            <p class="wiz-point" for="step-2"></p>
+            <p class="wiz-point" for="step-3"></p>
+            <p class="wiz-point" for="step-4"></p>
+            <p class="wiz-point" for="step-5"></p>
+          </div>
+          <div class="page-container">
+          {{> Template.dynamic template=currentPage}}
+          </div>
+          <div class="row page-footer">
+            <button class="btn btn-primary pull-right" id="nextpage">
+              {{nextBtnVal}}
+            </button>
+            <button class="btn btn-primary pull-right {{showPrevBtn}}" id="prevpage">
+              Previous
+            </button>
+          </div>
+        </div>
+      </div>
     </div>
-    <div class="page-container">
-    {{> Template.dynamic template=currentPage}}
-    </div>
-    <div class="row page-footer">
-      <button class="btn btn-primary pull-right" id="nextpage">
-        {{nextBtnVal}}
-      </button>
-      <button class="btn btn-primary pull-right {{showPrevBtn}}" id="prevpage">
-        Previous
-      </button>
-    </div>
-  </div>
+  </section>
 </template>
