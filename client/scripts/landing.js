@@ -7,4 +7,9 @@ Template.cover.rendered = function () {
                              .end()
                              .appendTo('.slider-wrapper');
 	}, 10000); // 10 seconds
+
+	$("#show-children").click(function() {
+		$(".show-more-children").show("slow");
+	});
+		console.log("clicked");
 }
