@@ -11,5 +11,13 @@ Template.cover.rendered = function () {
 	$("#show-children").click(function() {
 		$(".show-more-children").show("slow");
 	});
-		console.log("clicked");
+
+	$("#testimonial-slider").owlCarousel({
+ 
+      navigation : false, // Show next and prev buttons
+      slideSpeed : 300,
+      paginationSpeed : 400,
+      singleItem:true,
+      items: 1
+  });
 }

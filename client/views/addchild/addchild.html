@@ -12,14 +12,18 @@
           </div>
           <div class="page-container">
           {{> Template.dynamic template=currentPage}}
+            <div class="clearfix"></div>
           </div>
           <div class="row page-footer">
-            <button class="btn btn-primary pull-right" id="nextpage">
-              {{nextBtnVal}}
-            </button>
-            <button class="btn btn-primary pull-right {{showPrevBtn}}" id="prevpage">
-              Previous
-            </button>
+            <div class="col-sm-12">
+              <button class="btn btn-primary mr-s pull-right" id="nextpage">
+                {{nextBtnVal}}
+                <span class="glyphicon glyphicon-chevron-right"></span>
+              </button>
+              <button class="btn btn-primary mr-s pull-right {{showPrevBtn}}" id="prevpage">
+                Previous
+              </button>
+            </div>
           </div>
         </div>
       </div>

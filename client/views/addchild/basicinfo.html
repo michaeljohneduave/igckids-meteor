@@ -1,15 +1,15 @@
 <template name="basic">
   <div class="stepOne">
     <form class="form-horizontal">
-      <div class="col-sm-4 basic-info-container">
-        {{> basicInfo}}
-      </div>
-      <div class="col-sm-4 basic-info-container">
-        {{> academicInfo}}
-      </div>
-      <div class="col-sm-4 basic-info-container">
-        {{> livingCondition}}
-      </div>
+        <div class="col-sm-4 basic-info-container">
+          {{> basicInfo}}
+        </div>
+        <div class="col-sm-4 basic-info-container">
+          {{> academicInfo}}
+        </div>
+        <div class="col-sm-4 basic-info-container">
+          {{> livingCondition}}
+        </div>
     </form>
   </div>
 </template>
@@ -18,43 +18,42 @@
   <legend class="text-center">
    Basic Information
   </legend>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="firstName" class="col-md-4 control-label">First Name:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input class="form-control" id="firstName" />
     </div>
   </div>
-  <div class="form-group">
-    <label for="firstName" class="col-md-4 control-label">Middle Name:</label>
-    <div class="input-group col-md-8">
+  <div class="row mb-s">
+    <label for="middleName" class="col-md-4 control-label">Middle Name:</label>
+    <div class="col-md-8">
       <input class="form-control" id="middleName" />
     </div>
   </div>
-  <div class="form-group">
-    <label for="firstName" class="col-md-4 control-label">Last Name:</label>
-    <div class="input-group col-md-8">
+  <div class="row mb-s">
+    <label for="lastName" class="col-md-4 control-label">Last Name:</label>
+    <div class="col-md-8">
       <input class="form-control" id="lastName" />
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="birthday" class="col-md-4 control-label">Date of Birth:</label>
     <div class="input-group col-md-8" id="birthday">
-      <input type="text" class="form-control" placeholder="MMM-DD-YYYY" />
-      <span class="input-group-addon calendar-icon"><i class="fa fa-calendar"></i></span>
+        <input type="text" class="form-control" placeholder="MMM-DD-YYYY" />
+        <span class="input-group-addon calendar-icon"><i class="fa fa-calendar"></i></span>
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="gender" class="col-md-4 control-label">Gender:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <select class="form-control" id="gender">
         <option value="male">Boy</option>
-        <option value="female">Girl</option>
       </select>
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="area" class="col-md-4 control-label">Area:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input class="form-control" id="area" />
     </div>
   </div>
@@ -64,39 +63,39 @@
   <legend class="text-center">
     Academic Information
   </legend>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="school" class="col-md-4 control-label">School:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input class="form-control" id="school" />
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="gradeLevel" class="col-md-4 control-label">Grade level:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input class="form-control" id="gradeLevel" />
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="academicAbility" class="col-md-4 control-label">Academic Abilities:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input id="academicAbility" style="width:100%;" />
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="favSubject" class="col-md-4 control-label">Favourite Subjects:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input id="favSubject" style="width:100%;" />
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="careerChoice" class="col-md-4 control-label">Career Choice:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input class="form-control" id="careerChoice" />
     </div>
   </div>
-  <div class="form-group">
+  <div class="row mb-s">
     <label for="interests" class="col-md-4 control-label">Interests:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input id="interests" style="width:100%;" />
     </div>
   </div>
@@ -108,13 +107,13 @@
   </legend>
   <div class="form-group">
     <label for="livingWith" class="col-md-4 control-label">Living With:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input type="text" id="livingWith" style="width:100%;" />
     </div>
   </div>
   <div class="form-group">
     <label for="livingConditions" class="col-md-4 control-label">Living Conditions:</label>
-    <div class="input-group col-md-8">
+    <div class="col-md-8">
       <input type="text" id="livingConditions" style="width:100%;" />
     </div>
   </div>
