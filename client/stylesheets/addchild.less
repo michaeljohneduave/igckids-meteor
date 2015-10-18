@@ -6,6 +6,10 @@
   vertical-align: middle;
 }
 
+.select-fields {
+  width: 100%;
+}
+
 .calendar-icon {
   cursor: pointer;
 }
@@ -32,6 +36,7 @@
   margin: 2em;
   position: relative;
 }
+
 .step::before,
 .step::after {
   content: '';
@@ -42,6 +47,7 @@
   right: 0;
   background: #ccc;
 }
+
 .step::after {
   background: #458be3;
   -webkit-transition: right 0.5s;
@@ -50,21 +56,23 @@
 .step[data-step="0"]::after {
   right: 100%;
 }
+
 .step[data-step="1"]::after {
   right: 75%;
 }
+
 .step[data-step="2"]::after {
   right: 50%;
 }
+
 .step[data-step="3"]::after {
   right: 25%;
 }
+
 .step[data-step="4"]::after {
   right: 0%;
 }
-input {
-  display: none;
-}
+
 .wiz-point {
   counter-increment: step;
   color: #aaa;
@@ -74,14 +82,17 @@ input {
   cursor: pointer;
   margin: 0;
 }
+
 .wiz-point:first-of-type {
   background: -webkit-linear-gradient(left, #fff 50%, transparent 50%);
   background: linear-gradient(to right, #fff 50%, transparent 50%);
 }
+
 .wiz-point:last-of-type {
   background: -webkit-linear-gradient(left, transparent 50%, #fff 50%);
   background: linear-gradient(to right, transparent 50%, #fff 50%);
 }
+
 .wiz-point::before {
   content: counter(step);
   display: -webkit-box;
@@ -102,6 +113,7 @@ input {
           align-items: center;
   background: #ccc;
 }
+
 .forward .wiz-point::before {
   -webkit-transition: background 0 0.5s, color 0 0.5s;
           transition: background 0 0.5s, color 0 0.5s;
@@ -112,15 +124,13 @@ input {
 [data-step="2"] .wiz-point:nth-child(3) {
   color: #000;
 }
-[data-step="1"] .wiz-point:nth-child(1)::before,
 
+[data-step="1"] .wiz-point:nth-child(1)::before,
 [data-step="2"] .wiz-point:nth-child(1)::before,
 [data-step="2"] .wiz-point:nth-child(2)::before,
-
 [data-step="3"] .wiz-point:nth-child(1)::before,
 [data-step="3"] .wiz-point:nth-child(2)::before,
 [data-step="3"] .wiz-point:nth-child(3)::before,
-
 [data-step="4"] .wiz-point:nth-child(1)::before,
 [data-step="4"] .wiz-point:nth-child(2)::before,
 [data-step="4"] .wiz-point:nth-child(3)::before,
@@ -129,19 +139,15 @@ input {
 }
 
 [data-step="0"] .wiz-point:nth-child(1)::before,
-
 [data-step="1"] .wiz-point:nth-child(1)::before,
 [data-step="1"] .wiz-point:nth-child(2)::before,
-
 [data-step="2"] .wiz-point:nth-child(1)::before,
 [data-step="2"] .wiz-point:nth-child(2)::before,
 [data-step="2"] .wiz-point:nth-child(3)::before,
-
 [data-step="3"] .wiz-point:nth-child(1)::before,
 [data-step="3"] .wiz-point:nth-child(2)::before,
 [data-step="3"] .wiz-point:nth-child(3)::before,
 [data-step="3"] .wiz-point:nth-child(4)::before,
-
 [data-step="4"] .wiz-point:nth-child(1)::before,
 [data-step="4"] .wiz-point:nth-child(2)::before,
 [data-step="4"] .wiz-point:nth-child(3)::before,

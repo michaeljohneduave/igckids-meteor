@@ -9,7 +9,6 @@ aldeed:collection2
 iron:router
 twbs:bootstrap
 ongoworks:security
-natestrauser:select2
 tsega:bootstrap3-datetimepicker
 fortawesome:fontawesome
 nemo64:bootstrap
@@ -40,3 +39,4 @@ accounts-password
 accounts-facebook
 ian:accounts-ui-bootstrap-3
 alanning:roles
+natestrauser:select2
