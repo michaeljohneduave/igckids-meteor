@@ -3,11 +3,11 @@ Template.basic.created = function () {
 };
 
 Template.basic.rendered = function () {
-  $("#birthday").datetimepicker({
+  $("#birthday-field").datetimepicker({
     format : "MMM-DD-YYYY"
   });
 
-  $("#academicAbility").select2({
+  $("#academicAbilities").select2({
     placeholder : "Add academic abilities",
     tags : true
   });

@@ -1,5 +1,48 @@
 Template.addchild.created = function () {
   this.currentPage = new ReactiveVar(0);
+  this.formFields = new ReactiveVar({
+    firstName : null,
+    middleName : null,
+    lastName : null,
+    birthday : null,
+    gender : null,
+    area : null,
+    school : null,
+    gradeLevel : null,
+    academicAbilities : [],
+    favouriteSubject : [],
+    careerChoice : null,
+    interests : [],
+    livingWith : [],
+    livingConditions : [],
+
+    fatherName : null,
+    motherName : null,
+    siblings : [],
+
+    isImmunized : false,
+    immunizations : [],
+    healthStatus : null,
+    hasSkinCondition : false,
+    hasAsthma : false,
+    hasBoils : false,
+    hasMalnutition : false,
+    hasEyeProblems : false,
+    hasGoiter : false,
+    hasTb : false,
+    hasDentalProblems : false,
+    hasOtherConditions : [],
+
+    famSkinConditions : [],
+    famAsthma : [],
+    famBoils : [],
+    famMalnutrition : [],
+    famEyeProblems : [],
+    famGoiter : [],
+    famTb : [],
+    famTb1 : [],
+    famDentalProblems : []
+  });
 };
 
 Template.addchild.rendered = function () {
@@ -21,16 +64,39 @@ Template.addchild.rendered = function () {
 };
 
 Template.addchild.destroyed = function () {
-
 };
 
 Template.addchild.events({
   "click #nextpage" : function (evt, tmpl) {
-    var curPage = tmpl.currentPage.get();
+    var curPage = tmpl.currentPage.get(),
+      fields = null,
+      obj = {};
+
     ++curPage;
     if (curPage > 4) {
       return;
     }
+
+    switch(curPage) {
+      case 1:
+        fields = $(".basic-info-fields");
+      break;
+      case 2:
+        fields = $(".family-info-fields");
+      break;
+    }
+
+    _.each(fields, function (field) {
+      var id = $(field).attr("id"),
+        value = $(field).val();
+        if (id) {
+          console.log(id, value);
+        } else {
+          var dataId = $(field).attr("data-id"),
+            val = $(field).val();
+          console.log(dataId, val);
+        }
+    });
     tmpl.currentPage.set(curPage);
   },
   "click #prevpage" : function (evt, tmpl) {

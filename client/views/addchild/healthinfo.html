@@ -6,25 +6,26 @@
       </legend>
       <div class="form-group">
         <label for="immunized" class="col-md-4 control-label">Immunized:</label>
-        <input type="checkbox" class="health-cb" id="immunized" />
+        <input type="checkbox" class="health-cb health-info-fields" id="isImmunized" />
       </div>
       <div class="form-group">
         <label for="immunization" class="col-md-4 control-label">Immunization:</label>
         <div class="input-group col-md-8">
-          <select id="immunization" style="width: 100%;">
+          <select class="select-fields health-info-fields" id="immunizations" multiple>
             <option></option>
-            <option>111111111111111</option>
-            <option>222222222222222</option>
-            <option>333333333333333</option>
-            <option>444444444444444</option>
+            <option>Immu 1</option>
+            <option>Immu 2</option>
+            <option>Immu 3</option>
+            <option>Immu 4</option>
+            <option>Immu 14</option>
           </select>
         </div>
       </div>
       <div class="form-group">
         <label for="healthStatus" class="col-md-4 control-label">Health Status:</label>
         <div class="input-group col-md-8">
-          <select id="healthStatus" style="width: 100%;">
-            <option></option>
+          <select class="form-control select-fields health-info-fields" id="healthStatus">
+            <option hidden selected></option>
             <option>Good</option>
             <option>Not Good</option>
           </select>
@@ -39,19 +40,19 @@
         <div class="row">
           <label for="skinConditionSelf" class="col-md-5 control-label">Skin Condition:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="skinConditionSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasSkinCondition" />
           </div>
         </div>
         <div class="row">
           <label for="asthmaSelf" class="col-md-5 control-label">Asthma:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="asthmaSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasAsthma" />
           </div>
         </div>
         <div class="row">
           <label for="boilsSelf" class="col-md-5 control-label">Boils:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="boilsSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasBoils" />
           </div>
         </div>
         <div class="row">
@@ -61,33 +62,33 @@
           </div>
         </div>
         <div class="row">
-          <label for="eyeProblemsSelf" class="col-md-5 control-label">Eye Problems:</label>
+          <label for="hasEyeProblems" class="col-md-5 control-label">Eye Problems:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="eyeProblemsSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasEyeProblems" />
           </div>
         </div>
         <div class="row">
           <label for="goiterSelf" class="col-md-5 control-label">Goiter:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="goiterSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasGoiter" />
           </div>
         </div>
         <div class="row">
-          <label for="tbSelf" class="col-md-5 control-label">TB:</label>
+          <label for="hasTb" class="col-md-5 control-label">TB:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="tbSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasTb" />
           </div>
         </div>
         <div class="row">
-          <label for="dentalProblemsSelf" class="col-md-5 control-label">Dental Problems:</label>
+          <label for="hasDentalProblems" class="col-md-5 control-label">Dental Problems:</label>
           <div class="input-group col-md-3">
-            <input type="checkbox" class="health-cb" id="dentalProblemsSelf" />
+            <input type="checkbox" class="health-cb health-info-fields" id="hasDentalProblems" />
           </div>
         </div>
         <div class="row">
-          <label for="others" class="col-md-5 control-label">Others:</label>
+          <label for="hasOtherConditions" class="col-md-5 control-label">Others:</label>
           <div class="input-group col-md-6">
-            <select class="select-fields" id="others" multiple>
+            <select class="select-fields health-info-fields" id="hasOtherConditions" multiple>
             </select>
           </div>
         </div>
@@ -98,65 +99,65 @@
         Family Health Conditions
       </legend>
       <div class="form-group">
-        <label for="skinConditionFamily" class="col-md-5 control-label">Skin Conditions:</label>
+        <label for="famSkinConditions" class="col-md-5 control-label">Skin Conditions:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="skinConditionFamily" multiple>
+          <select class="select-fields health-info-fields" id="famSkinConditions" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="asthmaFamily" class="col-md-5 control-label">Asthma:</label>
+        <label for="famAsthma" class="col-md-5 control-label">Asthma:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="asthmaFamily" multiple>
+          <select class="select-fields health-info-fields" id="famAsthma" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="boilsFamily" class="col-md-5 control-label">Boils:</label>
+        <label for="famBoils" class="col-md-5 control-label">Boils:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="boilsFamily" multiple>
+          <select class="select-fields health-info-fields" id="famBoils" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="malnutritionFamily" class="col-md-5 control-label">Malnutrition:</label>
+        <label for="famMalnutrition" class="col-md-5 control-label">Malnutrition:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="malnutritionFamily" multiple>
+          <select class="select-fields health-info-fields" id="famMalnutrition" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="eyeProblemsFamily" class="col-md-5 control-label">Eye Problems:</label>
+        <label for="famEyeProblems" class="col-md-5 control-label">Eye Problems:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="eyeProblemsFamily" multiple>
+          <select class="select-fields health-info-fields" id="famEyeProblems" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="goiterFamily" class="col-md-5 control-label">Goiter:</label>
+        <label for="famGoiter" class="col-md-5 control-label">Goiter:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="goiterFamily" multiple>
+          <select class="select-fields health-info-fields" id="famGoiter" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="tbFamily" class="col-md-5 control-label">TB:</label>
+        <label for="famTb" class="col-md-5 control-label">TB:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="tbFamily" multiple>
+          <select class="select-fields health-info-fields" id="famTb" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="tbOneFamily" class="col-md-5 control-label">TB1:</label>
+        <label for="famTb1" class="col-md-5 control-label">TB1:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="tbOneFamily" multiple>
+          <select class="select-fields health-info-fields" id="famTb1" multiple>
           </select>
         </div>
       </div>
       <div class="form-group">
-        <label for="dentalProblemsFamily" class="col-md-5 control-label">Dental Problems:</label>
+        <label for="famDentalProblems" class="col-md-5 control-label">Dental Problems:</label>
         <div class="input-group col-md-6">
-          <select class="select-fields" id="dentalProblemsFamily" multiple>
+          <select class="select-fields health-info-fields" id="famDentalProblems" multiple>
           </select>
         </div>
       </div>

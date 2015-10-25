@@ -3,29 +3,24 @@ Template.health.created = function () {
 };
 
 Template.health.rendered = function () {
-  $("#immunization").select2({
+  $("#immunizations").select2({
     placeholder : "Add immunizations",
-    allowClear : true
   });
-  $("#healthStatus").select2({
-    placeholder : "Select status",
-    allowClear : true
-  });
-  $("#others").select2({
-    placeholder : "Select status",
-    allowClear : true,
+
+  $("#hasOtherConditions").select2({
+    placeholder : "Other conditions",
     tags : true
   });
 
-  $("#skinConditionFamily, \
-    #asthmaFamily, \
-    #boilsFamily, \
-    #malnutritionFamily, \
-    #eyeProblemsFamily, \
-    #goiterFamily, \
-    #tbFamily, \
-    #tbOneFamily, \
-    #dentalProblemsFamily").select2({
+  $("#famSkinConditions, \
+    #famAsthma, \
+    #famBoils, \
+    #famMalnutrition, \
+    #famEyeProblems, \
+    #famGoiter, \
+    #famTb, \
+    #famTb1, \
+    #famDentalProblems").select2({
     placeholder : "Specify who",
     tags : true
   });

@@ -13,13 +13,13 @@
   <div class="form-group">
     <label for="firstName" class="col-md-4 control-label">Father's Name:</label>
     <div class="input-group col-md-8">
-      <input class="form-control" id="firstName" required/>
+      <input class="form-control family-info-fields" id="fatherName" required/>
     </div>
   </div>
   <div class="form-group">
     <label for="firstName" class="col-md-4 control-label">Mother's Name:</label>
     <div class="input-group col-md-8">
-      <input class="form-control" id="middleName" required/>
+      <input class="form-control family-info-fields" id="motherName" required/>
     </div>
   </div>
   <legend class="text-center">
@@ -40,7 +40,7 @@
     <div class="form-group">
       <label for="firstName" class="col-md-4 control-label">{{this}}: </label>
       <div class="input-group col-md-8">
-        <input class="form-control sibling-input" required/>
+        <input class="form-control sibling-input family-info-fields" data-id="{{this}}" required/>
       </div>
     </div>
   {{/each}}
