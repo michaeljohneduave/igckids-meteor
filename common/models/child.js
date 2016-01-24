@@ -1,157 +1,157 @@
 Children = new Mongo.Collection("Children");
 
-var child = new SimpleSchema({
-  basic : {
-    type : basic
-  },
+// var child = new SimpleSchema({
+//   firstName : {
+//     type : String,
+//   },
 
-  family : {
-    type : family
-  },
+//   middleName : {
+//     type : String,
+//   },
 
-  health : {
-    type : health
-  },
+//   lastName : {
+//     type : String,
+//   },
 
-  createdAt : {
-    type : Date,
-    autoValue : function () {
-      if (this.isInsert) {
-        return new Date();
-      } else if (this.isUpsert) {
-        return {
-          $setOnInsert : new Date()
-        }
-      }
-      this.unset();
-    },
-    denyUpdate : true,
-  },
+//   birthday : {
+//     type : Date,
+//   },
 
-  updatedAt : {
-    type : Date,
-    autoValue : function () {
-      if (this.isUpdate) {
-        return new Date();
-      }
-    },
-    denyInsert : true,
-    optional : true
-  }
-});
+//   gender : {
+//     type : String,
+//     label : "Gender",
+//     allowedValues : ["male", "female"]
+//   },
 
-Children.attachSchema(child);
+//   area : {
+//     type : String,
+//     label : "Area",
+//     optional : true
+//   },
 
-var family = new SimpleSchema({
-  childId : {
-    type : String
-  },
+//   schoolAttended : {
+//     type : String,
+//     optional : true
+//   },
 
-  father : {
-    type : String
-  },
+//   gradeLevel : {
+//     type : String,
+//     optional : true
+//   },
 
-  mother : {
-    type : String
-  },
+//   academicAbility : {
+//     type : [String],
+//     optional : true
+//   },
 
-  siblings : {
-    type : [String]
-  }
-});
+//   favouriteSubject : {
+//     type : [String],
+//     optional : true
+//   },
 
-var basic = new SimpleSchema({
-  firstName : {
-    type : String,
-  },
+//   careerChoice : {
+//     type : String,
+//     optional : true
+//   },
 
-  middleName : {
-    type : String,
-  },
+//   interests : {
+//     type : [String],
+//     optional : true
+//   },
 
-  lastName : {
-    type : String,
-  },
+//   livingWith : {
+//     type : [String],
+//     optional : true
+//   },
 
-  birthday : {
-    type : Date,
-  },
+//   livingCondition : {
+//     type : [String],
+//     optional : true
+//   },
 
-  gender : {
-    type : String,
-    label : "Gender",
-    allowedValues : ["male", "female"]
-  },
+//   // family : {
+//   //   type : family,
+//   //   optional : true
+//   // },
 
-  area : {
-    type : String,
-    label : "Area",
-    optional : true
-  },
+//   // health : {
+//   //   type : health,
+//   //   optional : true
+//   // },
 
-  schoolAttended : {
-    type : String,
-    optional : true
-  },
+//   images : {
+//     type : [Object]
+//   },
 
-  gradeLevel : {
-    type : String,
-    optional : true
-  },
+//   createdAt : {
+//     type : Date,
+//     autoValue : function () {
+//       if (this.isInsert) {
+//         return new Date();
+//       } else if (this.isUpsert) {
+//         return {
+//           $setOnInsert : new Date()
+//         }
+//       }
+//       this.unset();
+//     },
+//     denyUpdate : true,
+//   },
 
-  academicAbility : {
-    type : [String],
-    optional : true
-  },
+//   updatedAt : {
+//     type : Date,
+//     autoValue : function () {
+//       if (this.isUpdate) {
+//         return new Date();
+//       }
+//     },
+//     denyInsert : true,
+//     optional : true
+//   }
+// });
 
-  favouriteSubject : {
-    type : [String],
-    optional : true
-  },
+// Children.attachSchema(child);
 
-  careerChoice : {
-    type : String,
-    optional : true
-  },
+// var family = new SimpleSchema({
+//   childId : {
+//     type : String
+//   },
 
-  interests : {
-    type : [String],
-    optional : true
-  },
+//   father : {
+//     type : String
+//   },
 
-  livingWith : {
-    type : [String],
-    optional : true
-  },
+//   mother : {
+//     type : String
+//   },
 
-  livingCondition : {
-    type : [String],
-    optional : true
-  }
-});
+//   siblings : {
+//     type : [String]
+//   }
+// });
 
-var health = new SimpleSchema({
-  childId : {
-    type : String
-  },
+// var health = new SimpleSchema({
+//   childId : {
+//     type : String
+//   },
 
-  isImmunized : {
-    type : Boolean
-  },
+//   isImmunized : {
+//     type : Boolean
+//   },
 
-  immunizations : {
-    type : [String]
-  },
+//   immunizations : {
+//     type : [String]
+//   },
 
-  status : {
-    type : String
-  },
+//   status : {
+//     type : String
+//   },
 
-  conditions : {
-    type : [String]
-  },
+//   conditions : {
+//     type : [String]
+//   },
 
-  familyConditions : {
-    type : [Object]
-  }
-});
+//   familyConditions : {
+//     type : [Object]
+//   }
+// });

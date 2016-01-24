@@ -1,3 +1,7 @@
-Meteor.publish("images_pub", function (keywords, options) {
-  return Images.find(keywords, options);
+Meteor.publish("children_pub", function (keywords, options) {
+  _.extend(keywords, {
+    isDeleted : false
+  });
+
+  return Children.find(keywords, options);
 });

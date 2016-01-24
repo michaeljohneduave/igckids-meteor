@@ -1,10 +1,38 @@
 <template name="uploadmedia">
-  <div class="col-sm-6 basic-info-container">
-    <legend class="text-center">
-      Upload Images/Videos
-    </legend>
-    <div class="form-group">
-      {{> upload_bootstrap}}
+  <div class="row">
+    <div class="col-sm-12 basic-info-container">
+      <legend class="text-center">
+        Upload Pictures
+      </legend>
+      <div class="row">
+        <div class="col-sm-12">
+          <button class="btn btn-primary" id="upload_widget_opener">
+            Upload images
+          </button>
+        </div>
+      </div>
+      <div class="row" style="padding-top : 10px">
+        {{#each listFiles}}
+          <div class="col-xs-3">
+            <div class="upload-image-container">
+              <img class="upload-image" src="{{this.secure_url}}" />
+            </div>
+          </div>
+        {{/each}}
+      </div>
     </div>
- </div>
+  </div>
+  <!-- {{> dropzone url='http://somewebsite.com/upload' id='dropzoneDiv' maxFiles=4}} -->
+  <div class="row" style="padding-top: 10px">
+    <div class="col-sm-12">
+      <button class="btn btn-primary mr-s pull-right {{isAdding.disableAddBtn}} {{hasImagesAdded}}" id="addchild">
+        {{isAdding.addBtnValue}}
+        <i class="fa fa-refresh {{isAdding.isAdding}}"></i>
+      </button>
+      <button class="btn btn-primary mr-s pull-right" id="prevpage">
+        <span class="glyphicon glyphicon-chevron-left"></span>
+        Previous
+      </button>
+    </div>
+  </div>
 </template>

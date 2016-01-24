@@ -29,8 +29,6 @@ check
 reactive-var
 raix:handlebar-helpers
 cfs:standard-packages
-tomi:upload-jquery
-tomi:upload-server
 gliese:masonry-desandro
 luisalmeida:unveil
 iamkevingreen:imagesloaded
@@ -40,3 +38,8 @@ accounts-facebook
 ian:accounts-ui-bootstrap-3
 alanning:roles
 natestrauser:select2
+isotope:isotope
+ajduke:bootstrap-tagsinput
+chrismbeckett:toastr
+pcel:loading
+momentjs:moment

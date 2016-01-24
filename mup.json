@@ -2,11 +2,10 @@
   // Server authentication info
   "servers": [
     {
-      "host": "igckids.cloudapp.net",
-      "username": "meduave",
-      "password": "qwerty123!"
+      "host": "54.169.235.13",
+      "username" : "ubuntu",
       // or pem file (ssh based authentication)
-      //"pem": "~/.ssh/id_rsa"
+      "pem": "~/work/code/node/igckids/igckids.pem"
     }
   ],
 
@@ -30,7 +29,7 @@
   "appName": "igckids",
 
   // Location of app (local directory)
-  "app": "/home/michael/work/meteor/igckids",
+  "app": "/home/michael/work/code/node/igckids",
 
   // Configure environment
   "env": {

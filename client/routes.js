@@ -14,7 +14,7 @@ Router.map(function () {
 		template : "home",
     waitOn: function () {
       return [
-        Meteor.subscribe("images_pub", {})
+        Meteor.subscribe("children_pub", {})
       ]
     }
 	});
@@ -32,6 +32,29 @@ Router.map(function () {
   this.route("sample", {
     path : "sample",
     template : "sample"
+  });
+
+  this.route("child", {
+    path : "child/:_id",
+    template : "child",
+    data : function () {
+      return Children.findOne({_id : this.params._id});
+    },
+    waitOn : function () {
+      return [
+        Meteor.subscribe("children_pub", {_id : this.params._id})
+      ]
+    }
+  });
+
+  this.route("editchild", {
+    path : "child/:_id/edit",
+    template : "addchild",
+    waitOn : function () {
+      return [
+        Meteor.subscribe("children_pub", {_id : this.params._id})
+      ]
+    }
   });
 });
 

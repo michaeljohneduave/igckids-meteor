@@ -1,0 +1,33 @@
+.children-list-container {
+  margin-top: 50px;
+}
+
+.children-grid-item {
+  cursor: pointer;
+  padding: 10px;
+}
+
+.children-grid-item:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  background-color: rgb(0,0,0);
+}
+
+.children-grid-item:hover:after {
+  opacity: 0.15;
+}
+
+.homepage-grid-photo {
+  display: block;
+  max-width:300px;
+  max-height:200px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}

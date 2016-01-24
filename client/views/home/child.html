@@ -1,0 +1,100 @@
+<template name="child">
+  <div class="container">
+    <div class="row">
+      <div class="col-xs-6">
+        <div class="row">
+          <div class="col-xs-12">
+            <h3>
+              {{uppercaseThis firstName}} {{uppercaseThis middleName}} {{uppercaseThis lastName}}
+            </h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <div class="child-image-carousel">
+              {{#each images}}
+                <div class="img-item">
+                  <img src="{{secure_url}}" />
+                </div>
+              {{/each}}
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-xs-6">
+        <div class="row" style="margin-top: 20px;">
+          <div class="col-xs-2 col-xs-offset-8">
+            <button class="btn btn-primary" id="editChild" data-id="{{_id}}" style="width: 100%;">
+              Edit
+            </button>
+          </div>
+          <div class="col-xs-2">
+            <button class="btn btn-danger" id="deleteChild" data-id="{{_id}}" style="width: 100%;">
+              Delete
+            </button>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Name: {{firstName}} {{middleName}} {{lastName}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Birthday: {{formatDate birthday}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Gender: {{gender}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Area: {{area}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>School: {{school}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Grade Level: {{gradeLevel}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Academic Abilities: {{formatArray academicAbilities}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Favourite Subjects: {{formatArray favouriteSubjects}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+           <span> Career Choice : {{careerChoice}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Interests : {{formatArray interests}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Living With: {{livingWith}}</span>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12">
+            <span>Living Conditions: {{livingConditions}}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

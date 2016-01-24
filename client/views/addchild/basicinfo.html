@@ -1,114 +1,169 @@
 <template name="basic">
   <div class="stepOne">
-    <form class="form-horizontal">
-        <div class="col-sm-4 basic-info-container">
-          <legend class="text-center">
-           Basic Information
-          </legend>
-          <div class="row mb-s">
-            <label for="firstName" class="col-md-4 control-label">First Name:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="firstName" />
-            </div>
+    <div class="row">
+      <form class="form-horizontal">
+          <div class="col-sm-4 basic-info-container">
+            <legend class="text-center">
+             Basic Information
+            </legend>
+            {{#with formError "firstName"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="firstName" class="col-md-4 control-label">First Name:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="firstName" value="{{basicInfoFields.firstName}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "middleName"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="middleName" class="col-md-4 control-label">Middle Name:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="middleName" value="{{basicInfoFields.middleName}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "lastName"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="lastName" class="col-md-4 control-label">Last Name:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="lastName" value="{{basicInfoFields.lastName}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "birthday"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="birthday" class="col-md-4 control-label">Date of Birth:</label>
+                <div class="input-group col-md-8" id="birthday-field">
+                    <input type="text" class="form-control basic-info-fields" placeholder="MMM-DD-YYYY" id="birthday" value="{{basicInfoFields.birthday}}" />
+                    <span class="input-group-addon calendar-icon"><i class="fa fa-calendar"></i></span>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "gender"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="gender" class="col-md-4 control-label">Gender:</label>
+                <div class="col-md-8">
+                  <select class="form-control basic-info-fields" id="gender">
+                    <option value="male">Boy</option>
+                    <option value="female">Girl</option>
+                  </select>
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "area"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="area" class="col-md-4 control-label">Area:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="area" value="{{basicInfoFields.area}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
           </div>
-          <div class="row mb-s">
-            <label for="middleName" class="col-md-4 control-label">Middle Name:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="middleName" />
-            </div>
+          <div class="col-sm-4 basic-info-container">
+            <legend class="text-center">
+              Academic Information
+            </legend>
+            {{#with formError "school"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="school" class="col-md-4 control-label">School:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="school" value="{{basicInfoFields.school}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "gradeLevel"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="gradeLevel" class="col-md-4 control-label">Grade level:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="gradeLevel" value="{{basicInfoFields.gradeLevel}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "academicAbilities"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="academicAbility" class="col-md-4 control-label">Academic Abilities:</label>
+                <div class="col-md-8">
+                  <select class="basic-info-fields" id="academicAbilities" data-role="tagsinput" multiple>
+                  </select>
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "favouriteSubjects"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="favSubject" class="col-md-4 control-label">Favourite Subjects:</label>
+                <div class="col-md-8">
+                  <select class="select-fields basic-info-fields" id="favouriteSubjects" data-role="tagsinput" multiple>
+                  </select>
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "careerChoice"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="careerChoice" class="col-md-4 control-label">Career Choice:</label>
+                <div class="col-md-8">
+                  <input class="form-control basic-info-fields" id="careerChoice" value="{{basicInfoFields.careerChoice}}" />
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "interests"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="interests" class="col-md-4 control-label">Interests:</label>
+                <div class="col-md-8">
+                  <select class="select-fields basic-info-fields" id="interests" data-role="tagsinput" multiple>
+                  </select>
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
           </div>
-          <div class="row mb-s">
-            <label for="lastName" class="col-md-4 control-label">Last Name:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="lastName" />
-            </div>
+          <div class="col-sm-4 basic-info-container">
+            <legend class="text-center">
+              Living Condition
+            </legend>
+            {{#with formError "livingWith"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="livingWith" class="col-md-4 control-label">Living With:</label>
+                <div class="col-md-8">
+                  <select class="select-fields basic-info-fields" id="livingWith" data-role="tagsinput" multiple>
+                  </select>
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
+            {{#with formError "livingConditions"}}
+              <div class="row mb-s {{errorClass}}">
+                <label for="livingConditions" class="col-md-4 control-label">Living Conditions:</label>
+                <div class="col-md-8">
+                  <select class="select-fields basic-info-fields" id="livingConditions" multiple>
+                  </select>
+                  <label class="control-label {{hideClass}}">{{reason}}</label>
+                </div>
+              </div>
+            {{/with}}
           </div>
-          <div class="row mb-s">
-            <label for="birthday" class="col-md-4 control-label">Date of Birth:</label>
-            <div class="input-group col-md-8" id="birthday-field">
-                <input type="text" class="form-control basic-info-fields" placeholder="MMM-DD-YYYY" id="birthday" />
-                <span class="input-group-addon calendar-icon"><i class="fa fa-calendar"></i></span>
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="gender" class="col-md-4 control-label">Gender:</label>
-            <div class="col-md-8">
-              <select class="form-control basic-info-fields" id="gender">
-                <option value="male">Boy</option>
-                <option value="male">Girl</option>
-              </select>
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="area" class="col-md-4 control-label">Area:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="area" />
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 basic-info-container">
-          <legend class="text-center">
-            Academic Information
-          </legend>
-          <div class="row mb-s">
-            <label for="school" class="col-md-4 control-label">School:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="school" />
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="gradeLevel" class="col-md-4 control-label">Grade level:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="gradeLevel" />
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="academicAbility" class="col-md-4 control-label">Academic Abilities:</label>
-            <div class="col-md-8">
-              <select class="select-fields basic-info-fields" id="academicAbilities" multiple>
-              </select>
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="favSubject" class="col-md-4 control-label">Favourite Subjects:</label>
-            <div class="col-md-8">
-              <select class="select-fields basic-info-fields" id="favSubject" multiple>
-              </select>
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="careerChoice" class="col-md-4 control-label">Career Choice:</label>
-            <div class="col-md-8">
-              <input class="form-control basic-info-fields" id="careerChoice" />
-            </div>
-          </div>
-          <div class="row mb-s">
-            <label for="interests" class="col-md-4 control-label">Interests:</label>
-            <div class="col-md-8">
-              <select class="select-fields basic-info-fields" id="interests" style="width:100%;" multiple>
-              </select>
-            </div>
-          </div>
-        </div>
-        <div class="col-sm-4 basic-info-container">
-          <legend class="text-center">
-            Living Condition
-          </legend>
-          <div class="form-group">
-            <label for="livingWith" class="col-md-4 control-label">Living With:</label>
-            <div class="col-md-8">
-              <select class="select-fields basic-info-fields" id="livingWith" multiple>
-              </select>
-            </div>
-          </div>
-          <div class="form-group">
-            <label for="livingConditions" class="col-md-4 control-label">Living Conditions:</label>
-            <div class="col-md-8">
-              <select class="select-fields basic-info-fields" id="livingConditions" multiple>
-              </select>
-            </div>
-          </div>
-        </div>
-    </form>
+      </form>
+    </div>
+    <div class="row">
+      <div class="col-sm-12">
+        <button class="btn btn-primary mr-s pull-right" id="nextpage">
+          Next
+          <span class="glyphicon glyphicon-chevron-right {{nextBtnValHide}}"></span>
+        </button>
+<!--         <button class="btn btn-primary mr-s pull-right {{showPrevBtn}}" id="prevpage">
+          <span class="glyphicon glyphicon-chevron-left"></span>
+          Previous
+        </button> -->
+      </div>
+    </div>
   </div>
 </template>

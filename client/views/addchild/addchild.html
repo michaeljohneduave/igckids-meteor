@@ -1,33 +1,12 @@
 <template name="addchild">
-  <section id="addchild">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-12">
-          <div class="step" data-step="0">
-            <p class="wiz-point" for="step-1"></p>
-            <p class="wiz-point" for="step-2"></p>
-            <p class="wiz-point" for="step-3"></p>
-            <p class="wiz-point" for="step-4"></p>
-            <p class="wiz-point" for="step-5"></p>
-          </div>
-          <div class="page-container">
-          {{> Template.dynamic template=currentPage}}
-            <div class="clearfix"></div>
-          </div>
-          <div class="row page-footer">
-            <div class="col-sm-12">
-              <button class="btn btn-primary mr-s pull-right" id="nextpage">
-                {{nextBtnVal}}
-                <span class="glyphicon glyphicon-chevron-right"></span>
-              </button>
-              <button class="btn btn-primary mr-s pull-right {{showPrevBtn}}" id="prevpage">
-                <span class="glyphicon glyphicon-chevron-left"></span>
-                Previous
-              </button>
-            </div>
-          </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <div class="page-container">
+        {{> Template.dynamic template=currentPage}}
+          <div class="clearfix"></div>
         </div>
       </div>
     </div>
-  </section>
+  </div>
 </template>

@@ -1,14 +1,5 @@
 Meteor.startup(function() {
-  Uploader.finished = function(index, fileInfo, templateContext) {
-    Images.insert({
-      userId: 1,
-      name: fileInfo.name
-    }, function (err, result) {
-      if (err) {
-        return console.error(err);
-      }
-    });
-  }
+  Session.setDefault("images", []);
 
   Accounts.ui.config({
     requestPermissions : {
@@ -19,5 +10,23 @@ Meteor.startup(function() {
   Accounts.config({
     forbidClientAccountCreation : true
   });
+
+  toastr.options = {
+    "closeButton": false,
+    "debug": false,
+    "newestOnTop": false,
+    "progressBar": false,
+    "positionClass": "toast-bottom-right",
+    "preventDuplicates": false,
+    "onclick": null,
+    "showDuration": "300",
+    "hideDuration": "1000",
+    "timeOut": "5000",
+    "extendedTimeOut": "1000",
+    "showEasing": "swing",
+    "hideEasing": "linear",
+    "showMethod": "fadeIn",
+    "hideMethod": "fadeOut"
+  };
 });
 
