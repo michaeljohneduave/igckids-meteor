@@ -1,9 +1,47 @@
-.upload-image-container {
-  border: solid 1px;
-  padding: 1px;
+.image-grid {
+  margin-top: 10px;
 }
 
-.upload-image {
+.image-grid-item {
+  // cursor: pointer;
+}
+
+.image-grid-item:after {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
   width: 100%;
-  height: 100px
+  height: 100%;
+  opacity: 0;
+  background-color: #000000;
+}
+
+.image-grid-item:hover:after {
+  opacity: 0.15;
+}
+
+.image-grid-photo {
+  display: block;
+  min-width: 200px;
+  max-width: 300px;
+  width: auto;
+  height: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.remove-image-btn {
+  cursor: pointer;
+  position: absolute;
+  float: left;
+  top: 5%;
+  right: 5%;
+  display: none;
+  color: black;
+  z-index: 10;
+}
+
+.image-grid-item:hover .remove-image-btn {
+  display: block;
 }

@@ -11,12 +11,11 @@
           </button>
         </div>
       </div>
-      <div class="row" style="padding-top : 10px">
+      <div class="image-grid">
         {{#each listFiles}}
-          <div class="col-xs-3">
-            <div class="upload-image-container">
-              <img class="upload-image" src="{{this.secure_url}}" />
-            </div>
+          <div class="image-grid-item">
+            <img class="image-grid-photo" src="{{this.secure_url}}"/>
+            <i class="remove-image-btn fa fa-times fa-2x" id="{{this.public_id}}"></i>
           </div>
         {{/each}}
       </div>

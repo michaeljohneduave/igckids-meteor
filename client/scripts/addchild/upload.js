@@ -5,30 +5,26 @@ Template.uploadmedia.created = function () {
 }
 
 Template.uploadmedia.rendered = function () {
-
+  var $grid = $('.image-grid').isotope({
+    itemSelector : ".image-grid-item",
+    masonry : {
+      columnWidth : 100,
+      gutter : 5
+    }
+  });
+  // layout Isotope after each image loads
+  $grid.imagesLoaded().progress( function() {
+    $grid.isotope('layout');
+    $('.image-grid').isotope({
+      itemSelector : ".image-grid-item",
+      layoutMode: 'masonry',
+      transitionDuration: "0.2s",
+    });
+  });
+  $grid.isotope('shuffle');
 }
 
 Template.uploadmedia.events({
-  "change #mediauploader" : function (evt, tmpl) {
-    var reader = new FileReader(),
-      files = [],
-      x = 0;
-
-    reader.readAsDataURL(evt.target.files[x++]);
-    reader.addEventListener("load", function (event) {
-      files.push({
-        file : evt.target.files[x - 1],
-        data : event.target.result
-      });
-
-      if (x < evt.target.files.length) {
-        reader.readAsDataURL(evt.target.files[x++]);
-      } else {
-        tmpl.files.set(files);
-      }
-    });
-  },
-
   "click #upload_widget_opener" : function (evt, tmpl) {
     cloudinary.openUploadWidget({
       cloud_name: 'igckids',
@@ -38,7 +34,8 @@ Template.uploadmedia.events({
         return toastr.error("Something wrong happened.");
       }
 
-      Session.set("images", result);
+      var images = Session.get("images").concat(result);
+      Session.set("images", images);
     });
   },
 
@@ -49,10 +46,6 @@ Template.uploadmedia.events({
     var fields = Session.get("forms");
 
     try {
-      if (isEditing) {
-        files = files.concat(child.images);
-      }
-
       if (!files.length) {
         return alert("Add photos before adding kid.");
       }
@@ -67,11 +60,27 @@ Template.uploadmedia.events({
       images : files
     });
 
-    Children.update({
-      _id : child._id
-    }, {
-      $set : fields
-    }, function (err, result) {
+    if (isEditing) {
+      return Children.update({
+        _id : child._id
+      }, {
+        $set : fields
+      }, function (err, result) {
+        tmpl.isAdding.set(false);
+
+        if (err) {
+          console.error(err);
+          return toastr.error("Something went wrong while adding.");
+        }
+        toastr.success("Successfully saved kid.");
+        Session.set("images", []);
+        Session.set("forms", {});
+        Session.set("currentPage", 0);
+        Router.go("home");
+      });
+    }
+
+    Children.insert(fields, function (err, result) {
       tmpl.isAdding.set(false);
 
       if (err) {
@@ -82,22 +91,34 @@ Template.uploadmedia.events({
       Session.set("images", []);
       Session.set("forms", {});
       Session.set("currentPage", 0);
-
-      if (isEditing) {
-        Router.go("home");
-      }
-
+      Router.go("home");
     });
+  },
+
+  "click .remove-image-btn" : function (evt, tmpl) {
+    if (!window.confirm("Are you sure you want to remove the image?")) {
+      return;
+    }
+
+    var images = Session.get("images");
+    var index = null;
+
+    _.each(images, function (elem, idx) {
+      if (elem.public_id === evt.target.id) {
+        index = idx;
+      }
+    });
+
+    if (index) {
+      images.splice(index, 1);
+      Session.set("images", images);
+    }
   }
 });
 
 Template.uploadmedia.helpers({
   listFiles : function () {
-    var isEditing = Router.current().route.getName() === "editchild";
-    var savedImages = Children.findOne({}).images;
-    var recentlyUploadedImages = Session.get("images");
-
-    return isEditing ? savedImages.concat(recentlyUploadedImages) : Session.get("images");
+    return Session.get("images");
   },
 
   isAdding : function () {
@@ -106,15 +127,12 @@ Template.uploadmedia.helpers({
 
     return  {
       addBtnValue : isAdding ? (isEditing ? "Saving kid" : "Adding kid") : (isEditing ? "Save kid" : "Add kid"),
-      disableAddBtn : (isAdding || !isEditing) ? "disabled" : "",
+      disableAddBtn : (isAdding || !isEditing) ? "" : "",
       isAdding : isAdding ? "fa-refresh fa-spin" : "fa-plus"
     };
   },
 
   hasImagesAdded : function () {
-    var isEditing = Router.current().route.getName() === "editchild";
-    var savedImages = Children.findOne({}).images.concat(Session.get("images"));
-
-    return Boolean(savedImages.length) ? "" : "disabled";
+    return Boolean(Session.get("images")) ? "" : "disabled";
   }
 });

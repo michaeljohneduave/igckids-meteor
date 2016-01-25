@@ -54,6 +54,12 @@ Router.map(function () {
       return [
         Meteor.subscribe("children_pub", {_id : this.params._id})
       ]
+    },
+    action : function () {
+      if (this.ready()) {
+        Session.set("images", Children.findOne({}).images || []);
+        return this.render();
+      }
     }
   });
 });
