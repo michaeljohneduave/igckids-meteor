@@ -3,8 +3,9 @@ Meteor.startup(function() {
 
   Accounts.ui.config({
     requestPermissions : {
-      facebook : ["public_profile", "email", "user_friends"]
-    }
+      facebook : ["public_profile", "email", "user_friends"],
+    },
+    passwordSignupFields : "USERNAME_OPTIONAL_EMAIL"
   });
 
   Accounts.config({
